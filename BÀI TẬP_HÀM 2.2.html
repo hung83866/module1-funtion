@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đơn vị đo meter và feet</title>
+</head>
+<body>
+NHẬP METER <input type="number" id="input" oninput="a1()"> => FIT = <span id="inra"></span> <br>
+NHẬP FIT <input type="number" id="input1" oninput="b1()"> => METER = <span id="inra1"></span>
+<SCRIPT>
+    function met_fit(a){
+        let ketqua = a/0.305;
+        return ketqua;
+    }
+    function fit_met(b){
+        let ketqua1 = b/3.279;
+        return ketqua1;
+    }
+    function a1(){
+        let a = +document.getElementById('input').value;
+        document.getElementById('inra').innerHTML = met_fit(a);
+    }
+    function b1(){
+        let b = +document.getElementById('input1').value;
+        document.getElementById('inra1').innerHTML = fit_met(b);
+    }
+
+
+</SCRIPT>
+
+</body>
+</html>
