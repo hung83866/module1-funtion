@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> tính giai thừa của một số nguyên bất kỳ </title>
+</head>
+<body>
+GIAI THỪA CỦA <INPUT id="input" oninput="tính()"> KẾT QUẢ <span id="output"></span>
+<script>
+    function giaiThua(a){
+        let i = 1;
+        let ketqua = 1;
+        for (;i<=a;i++){
+            ketqua*=i;
+        }
+        return ketqua;
+    }
+    function tính(){
+        let x = +document.getElementById('input').value;
+        document.getElementById('output').innerHTML = giaiThua(x);
+    }
+</script>
+
+</body>
+</html>

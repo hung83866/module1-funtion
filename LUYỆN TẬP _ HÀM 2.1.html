@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm tính bình phương của một số bất kỳ</title>
+</head>
+<body>
+BÌNH PHƯƠNG CỦA <INPUT id="input" oninput="tính()"> KẾT QUẢ <span id="output"></span>
+<script>
+    function square(a){
+        let ketqua = a*a;
+        return ketqua;
+    }
+    function tính(){
+        let x = +document.getElementById('input').value;
+        document.getElementById('output').innerHTML = square(x);
+    }
+</script>
+</body>
+</html>

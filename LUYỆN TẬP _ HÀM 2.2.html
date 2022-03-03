@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TÍNH DIỆN TÍCH + CHU VI HÌNH TRÒN</title>
+</head>
+<body>
+ nhập bán kính R=<INPUT id="input" oninput="tính()"> <br>
+ diện tích S = <span id="output"></span> <br>
+chu vi C = <span id="output1"></span> <br>
+ <script>
+     function s(a){
+         let ketqua = Math.PI*a*a;
+         let lamtron = ketqua.toFixed(3);
+         return lamtron;
+     }function c(b){
+         let ketqua1 = 2*b*Math.PI;
+         let lamtron1 = ketqua1.toFixed(3);
+
+         return lamtron1;
+     }function tính(){
+         let x = +document.getElementById('input').value;
+         document.getElementById('output').innerHTML = s(x);
+         document.getElementById('output1').innerHTML = c(x);
+
+     }
+ </script>
+</body>
+</html>

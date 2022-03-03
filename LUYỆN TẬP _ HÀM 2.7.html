@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ĐỔI VỊ TRÍ</title>
+</head>
+<body>
+<script>
+    let a = +prompt('nhập a');
+    let b = +prompt('nhập b');
+    let arr=[a,b];
+    function doiViTri(arr){
+        let c = arr[0];
+        arr[0] = arr[1];
+        arr[1] = c;
+        return arr;
+    }
+    document.write(doiViTri(arr))
+</script>
+</body>
+</html>

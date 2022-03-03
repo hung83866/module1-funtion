@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('nhập chuỗi');
+    let b = prompt('nhập ký tự');
+    let str=a.toString();
+    let count = 0;
+    function abc(arr,c){
+        for (let i =0 ;i<arr.length;i++){
+            if (arr[i]===c){
+                count++
+            }
+        }
+        console.log(count)
+        return count/2;
+    }
+    if (abc(str,b)>0){
+        alert('số lần suất hiện trong array là :'+abc(str,b))
+    }else {
+        alert('-1')
+    }
+
+</script>
+</body>
+</html>
