@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHUYỂN ĐỔI NHIỆT ĐỘ</title>
+</head>
+<body>
+NHẬP NHIỆT ĐÔ(F) <input type="number" id="input" oninput="chuyenDoi1()" > <br>
+NHIỆT ĐỘ(C)= <span id="inra"></span>
+<SCRIPT>
+    let result;
+function chuyenDoi(a){
+    result = (a-32)/1.8;
+    return result;
+}
+function chuyenDoi1(){
+    let b = +document.getElementById('input').value;
+    result=chuyenDoi(b);
+    document.getElementById('inra').innerHTML = result
+}
+</SCRIPT>
+</body>
+</html>
