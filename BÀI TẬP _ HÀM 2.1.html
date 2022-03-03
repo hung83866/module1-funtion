@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KIỂM TRA SỐ NGUYÊN</title>
+</head>
+<body>
+<SCRIPT>
+    function kiemTraSoNguyen(a){
+        let check = true
+        for (let i =2 ; i < a ; i++){
+            if (a%i==0){
+                check=false;
+                break;
+            }
+        }if (check){
+        return a;}
+    }
+    for (let b=2;b<1000;b++){
+    document.write(kiemTraSoNguyen(b)+',')
+    }
+</SCRIPT>
+</body>
+</html>
