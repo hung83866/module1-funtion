@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NGÔI SAO VÀ CÁC CHÒM SAO</title>
+</head>
+<body>
+<button onclick="timKiem()">tên ngôi sao</button>
+<script>
+    let arr=['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' , 'Regulus'];
+    let arr1=['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+    function azx(a){
+        let y = arr.indexOf(a);
+        if (y==-1){
+            return  alert('sai tên rồi bro!');
+        }
+        else {
+            return alert(arr1[y]);
+        }
+    }
+    function timKiem(){
+        let x = prompt('NAME :');
+        document.write(azx(x));
+    }
+</script>
+</body>
+</html>
